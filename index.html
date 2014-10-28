@@ -2,22 +2,181 @@
 layout: default
 ---
 
-<div class="home">
+<div id="header" class="animated" data-spy="affix" data-offset-top="450">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <img src="img/logo_w_50.png" height="53" width="179" alt="catchy.io"/>
+                </div>
+                <a href="#" class="btn btn-linkedin button btn-email"
+                   onclick="$('#signup').fadeOut(200, function(){$('#mc_embed_signup').fadeIn();$('#mce-EMAIL').focus();});">
+                    <i class="icon-mail-alt pull-left"></i>
+                    Apply To The Beta
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="container" id="presentation">
+    <div class="row ">
+        <div class="col-md-6">
+            <div class="row">
+                <h1>
+                    <span>Don't worry.</span>
+                    <span>We find your issues and help you fix them quickly.</span>
+                </h1>
+                <div class="sign-options" class="clearfix">
+                    <h3>We're launching our private beta soon.<br/>Want to try it ?</h3>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <div id="signup" class="clearfix">
+                        <div>
+                            <!--                <a href="#" class="btn btn-github button">-->
+                            <!--                    <i class="icon-github-circled pull-left"></i>-->
+                            <!--                    Sign up with GitHub-->
+                            <!--                </a>-->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                            <a href="#" class="btn btn-linkedin button btn-email"
+                               onclick="$('#signup').fadeOut(200, function(){$('#mc_embed_signup').fadeIn();$('#mce-EMAIL').focus();});">
+                                <i class="icon-mail-alt pull-left"></i>
+                                Apply To The Beta
+                            </a>
+                        </div>
+                    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                    <div id="mc_embed_signup" style="display: none">
+                        <form
+                                action="http://catchy.us8.list-manage.com/subscribe/post?u=7bae025693f6b8167f07d39c6&amp;id=7b744aedb8"
+                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="validate form-horizontal" target="_blank" novalidate>
 
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <div class="input-group">
+                                        <input type="email" value="" name="EMAIL" class="form-control required email"
+                                               id="mce-EMAIL" placeholder="Enter your email"/>
+                        <span class="input-group-btn" style="vertical-align: top">
+                        <input type="submit" value="Get early access" name="subscribe" id="mc-embedded-subscribe"
+                               class="btn btn-primary button"/>
+                        </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <div class="col-md-1">
+
+                                </div>
+                            </div>
+
+                            <div id="mce-responses" class="form-group clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                                   name="b_7bae025693f6b8167f07d39c6_7b744aedb8"
+                                                                                   value=""></div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6 video">
+            <video id="-inCi7hNNA8" class="sublime" width="640" height="360" data-sharing-url="http://catchy.io" data-sharing-text="Going to test catchy.io soon. Any of you already got hands on the beta ?" data-uid="-inCi7hNNA8" data-youtube-id="-inCi7hNNA8" preload="none">
+            </video>
+            <script type="text/javascript" src="//cdn.sublimevideo.net/js/wflmaayu.js"></script>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+
+
+</div>
+
+<div class="details" id="details">
+    <div class="container">
+
+        <div id="why">
+            <h2>Know before being called by customers</h2>
+
+            <p>
+                Catchy.io monitors every part of your web application and provides real-time analytics on performance, issues and deploys.
+                <br/>
+                <strong>Know, improve and fix faster than before</strong>.
+            </p>
+        </div>
+
+        <div id="features">
+            <h2>Features</h2>
+            <div class="row">
+
+                <div class="col-md-6 col-xs-12 c">
+                    <h3><i class="icon-medkit"></i>
+
+                        <div>Real-time error reporting and notifications</div>
+                    </h3>
+
+                    <div class="hidden-xs">Inspect request, stacktrace, session, cookies &amp; more.</div>
+                </div>
+                <div class="col-md-6 col-xs-12 picture">
+                    <img src="img/real-time_error_reporting_and_notifications.png" width="100%"/>
+                </div>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-md-6 col-xs-12 c">
+                    <h3><i class="icon-chart-line"></i>
+
+                        <div>Performance follow-up</div>
+                    </h3>
+
+                    <div class="hidden-xs">We measure separately PHP, DB and Javascript execution time.</div>
+                </div>
+                <div class="col-md-6 col-xs-12 picture">
+                    <img src="img/rerformance_follow-up.png" width="100%"/>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-xs-12 c">
+                    <h3><i class="icon-emo-thumbsup"></i>
+
+                        <div>No code modification</div>
+                    </h3>
+
+                    <div class="hidden-xs">Install our PHP extension and get reports in minutes!</div>
+                </div>
+                <div class="col-md-6 col-xs-12 picture">
+                    <img src="img/no_code_modification.png" width="100%"/>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-md-6 col-xs-12 c">
+                    <h3><i class="icon-lock-open"></i>
+
+                        <div>Keep using your tools</div>
+
+                    </h3>
+
+                    <div class="hidden-xs">Sensu, Graphite, Zabbix, Scout&hellip;<br/>You name it.</div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 picture">
+                    <img src="img/keep_using_your_tool.png" width="100%"/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
